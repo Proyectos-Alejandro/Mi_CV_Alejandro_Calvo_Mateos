@@ -1,0 +1,245 @@
+:root {
+    --color-texto: #000000;       
+    --color-fondo: #7b7f89;       
+    --color-cajas: #ffffff;       
+    --color-acento: #ff0000;      
+    --color-principal: #7f0193;   
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-texto: #ffffff;
+        --color-fondo: #22252a;       
+        --color-cajas: #333842;       
+        --color-acento: #ff4d4d;      
+        --color-principal: #a633ba;   
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    min-height: 100vh; 
+}
+
+a { 
+    text-decoration: none; 
+    color: var(--color-cajas);
+}
+
+ul { 
+    list-style: none; 
+}
+
+.grid_index {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+        "header"
+        "perfil"
+        "biografia"
+        "habilidades"
+        "experiencia"
+        "estudios"
+        "sidebar"
+        "footer";
+}
+
+@media screen and (min-width: 768px) {
+    .grid_index {
+        grid-template-columns: 250px 1fr; 
+        grid-template-rows: 60px auto auto auto auto auto auto auto;
+        
+        grid-template-areas:
+            "header     header      header          header          header      header      header"
+            "sidebar    sidebar     perfil          perfil          perfil      biografia   biografia"
+            "sidebar    sidebar     habilidades     habilidades     habilidades experiencia experiencia"
+            "sidebar    sidebar     estudios          estudios        estudios     estudios     estudios"
+            "footer     footer      footer          footer          footer      footer       footer";
+    }
+}
+
+.main_header {
+    grid-area: header;
+    background-color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 2px solid var(--color-acento); 
+    position: sticky;
+    top: 0;
+}
+
+.main_header .logo { 
+    height: 50px; 
+    border-radius: 40px;
+}
+
+.main_nav { 
+    display: flex; 
+    gap: 20px;
+    
+}
+
+.main_nav a {
+    color: var(--color-cajas);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main_nav a:hover { 
+    color: var(--color-texto);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--color-principal);
+    color: var(--color-cajas);
+    padding: 20px;
+    border-right: 2px solid var(--color-acento);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-cajas);
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: var(--color-cajas);
+    font-size: 14px;
+}
+
+.sidebar li a:hover {
+    text-decoration: underline;
+}
+
+.sidebar img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.biografia, .habilidades, .experiencia, .estudios {
+    background-color: var(--color-cajas);
+    color: var(--color-texto);
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.biografia { grid-area: biografia; }
+.habilidades { grid-area: habilidades; }
+.experiencia { grid-area: experiencia; }
+.estudios { grid-area: estudios; }
+
+.biografia h1, .habilidades h2, .experiencia h2, .estudios h2 {
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+.habilidades li, .experiencia li, .estudios li {
+    margin-bottom: 8px;
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.perfil {
+    grid-area: perfil;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil img {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid var(--color-principal);
+    object-fit: cover;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--color-principal);
+    color: var(--color-cajas);
+    text-align: center;
+    padding: 40px;
+    position: sticky;
+    bottom: 0;
+}
+
+@media (prefers-color-scheme: light){
+:root {
+    --color-1: #FE006D; 
+    --color-2: #FFC00C; 
+    --color-3: #3B87FF; 
+    --color-4: #8439EC;
+    --color-5: #FC5708; 
+    --color-6: #00F6D5; 
+    --color-fondo: #F5F5DC; 
+    --color-texto: #FFFFFF;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-1: #DB4B4B; 
+        --color-2: #FFE26C;
+        --color-3: #93CF93;
+        --color-4: #B698DF; 
+        --color-5: #DBA085; 
+        --color-6: #FFAAD5; 
+        --color-fondo: #F5F5DC; 
+        --color-texto: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    main {
+    display: grid;
+    grid-template-areas: 
+        "seccion-a"
+        "seccion-b"
+        "seccion-c"
+        "seccion-d"
+        "seccion-e"
+        "seccion-f";
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+    display: grid;
+    grid-template-areas: 
+        "seccion-a seccion-b"
+        "seccion-c seccion-d"
+        "seccion-e seccion-f";
+    }
+}
