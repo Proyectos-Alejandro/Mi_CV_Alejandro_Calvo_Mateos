@@ -192,6 +192,7 @@ ul {
     padding: 40px;
     position: sticky;
     bottom: 0;
+    border-top: 1px solid var(--color-acento);
 }
 
 @media (prefers-color-scheme: light){
