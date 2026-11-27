@@ -3,90 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALEJANDRO CALVO MATEOS</title>
-    <link rel="stylesheet" href="assets/css/index_style.css"> 
+    <title>Alejandro Calvo Mateos · CV · Sistemas, redes y ciberseguridad</title>
+    <meta name="description" content="CV de Alejandro Calvo Mateos, estudiante de 2º de ASIR en la UAX con especialización en ciberseguridad. Sistemas Windows y Linux, redes, Docker y desarrollo web.">
+    <meta name="author" content="Alejandro Calvo Mateos">
+    <meta property="og:title" content="Alejandro Calvo Mateos · CV">
+    <meta property="og:description" content="Estudiante de ASIR especializándose en ciberseguridad.">
+    <meta property="og:type" content="profile">
+    <meta name="theme-color" content="#1d2733">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index_style.css">
 </head>
 <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-    <div class="grid_index">
-        
-        <header class="main_header">
-            <img src="assets/img/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul class="main_nav">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#proyectos">PROYECTOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                    <li><a href="login.html">PERFIL</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="cabecera">
+        <!-- Orden de colores de un cable de red T568B -->
+        <div class="cable" aria-hidden="true">
+            <span class="hilo blanco-naranja"></span><span class="hilo naranja"></span>
+            <span class="hilo blanco-verde"></span><span class="hilo azul"></span>
+            <span class="hilo blanco-azul"></span><span class="hilo verde"></span>
+            <span class="hilo blanco-marron"></span><span class="hilo marron"></span>
+        </div>
 
-        <aside class="sidebar">
-            <h2>Enlaces de interés</h2>
-            <ul>
+        <div class="cabecera-interior">
+            <div class="identidad">
+                <h1 class="nombre">Alejandro<br>Calvo Mateos</h1>
+                <p class="titular">Técnico de sistemas y redes en formación, especializándome en ciberseguridad.</p>
+                <p class="ubicacion">Zona sur de Madrid. Carnet B y coche propio.</p>
+            </div>
+
+            <!-- Para poner tu foto: guárdala como assets/img/foto.jpg y cambia este div por
+                 <img class="foto" src="assets/img/foto.jpg" alt="Alejandro Calvo Mateos"> -->
+            <div class="foto foto-iniciales" aria-hidden="true">AC</div>
+        </div>
+
+        <nav class="contacto" aria-label="Contacto">
+            <a href="mailto:alejandro.cal.mat@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                alejandro.cal.mat@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/alejandro-calvo-mateos-284720370/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg>
+                LinkedIn
+            </a>
+            <a href="https://github.com/Proyectos-Alejandro" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                GitHub
+            </a>
+            <!-- Cambia TU_USUARIO por tu usuario de Instagram -->
+            <a href="https://www.instagram.com/TU_USUARIO/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+                Instagram
+            </a>
+            <button class="boton-pdf" type="button" onclick="window.print()">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Descargar en PDF
+            </button>
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <section class="bloque" aria-labelledby="t-perfil">
+            <h2 id="t-perfil">Perfil</h2>
+            <div class="cuerpo">
+                <p class="perfil">Estudio 2º de ASIR en la UAX y la especialización en ciberseguridad de Xtart. En casa monto laboratorios con Windows Server, Ubuntu, Kali y Docker, y en mi tiempo libre desarrollo proyectos reales: un TPV completo para comercios y un blog técnico sobre seguridad y homelab. Me gusta entender cómo funciona cada pieza, documentarlo y dejarlo seguro.</p>
+            </div>
+        </section>
+
+        <section class="bloque" aria-labelledby="t-experiencia">
+            <h2 id="t-experiencia">Experiencia</h2>
+            <ol class="cuerpo linea-tiempo">
                 <li>
-                    <a href="https://linkedin.com" target="_blank">
-                        <img src="assets/img/linkedin.png" alt="LinkedIn"> LinkedIn
-                    </a>
+                    <p class="fecha">Desde marzo de 2027</p>
+                    <h3>Prácticas en Accenture</h3>
+                    <p class="lugar">Oficina de la Castellana, Madrid</p>
+                    <p>Incorporación confirmada como alumno en prácticas.</p>
                 </li>
                 <li>
-                    <a href="https://github.com" target="_blank">
-                        <img src="assets/img/github.png" alt="GitHub"> GitHub
-                    </a>
+                    <p class="fecha">2025</p>
+                    <h3>Estancia formativa en Accenture</h3>
+                    <p class="lugar">Madrid</p>
+                    <p>Un mes de prácticas con cursos de formación interna.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="bloque" aria-labelledby="t-proyectos">
+            <h2 id="t-proyectos">Proyectos</h2>
+            <div class="cuerpo proyectos">
+                <article class="proyecto par-naranja">
+                    <h3>Marchando, TPV para restaurantes y tiendas</h3>
+                    <p>Caja, plano de mesas, pantalla de cocina, PDA para camareros e inventario, en cinco idiomas. Facturación preparada para VERI*FACTU, copias de seguridad cifradas e instalador para Windows que endurece permisos y ejecuta el servicio con una cuenta sin privilegios. Cada cambio pasa una batería de pruebas de seguridad en GitHub Actions.</p>
+                    <p class="tecnologias">Next.js, TypeScript, Prisma, SQLite, PowerShell, Astro</p>
+                </article>
+                <article class="proyecto par-verde">
+                    <h3><a href="https://homelabsegura.tech" target="_blank" rel="noopener">Homelab Seguro</a></h3>
+                    <p>Blog en español sobre ciberseguridad, sistemas y homelab: guías de Proxmox, detección de phishing y gestores de contraseñas. Web estática con SEO, modo oscuro y publicación automática.</p>
+                    <p class="tecnologias">Hugo, Cloudflare Pages, Git</p>
+                </article>
+                <article class="proyecto par-azul">
+                    <h3>Laboratorio de sistemas</h3>
+                    <p>Dominio de prácticas con Windows Server 2022 y 2025 en VirtualBox: direccionamiento IP, servidores DHCP y DNS, y clientes Windows 11 y Ubuntu. Kali Linux para pruebas de seguridad y Docker para servicios.</p>
+                    <p class="tecnologias">Windows Server, Ubuntu, Kali Linux, VirtualBox, Docker</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bloque" aria-labelledby="t-formacion">
+            <h2 id="t-formacion">Formación</h2>
+            <ol class="cuerpo linea-tiempo">
+                <li>
+                    <p class="fecha">2026 – en curso</p>
+                    <h3>Especialización en Ciberseguridad</h3>
+                    <p class="lugar">Xtart, Alcorcón</p>
                 </li>
                 <li>
-                    <a href="https://instagram.com" target="_blank">
-                        <img src="assets/img/instagram.png" alt="Instagram"> Instagram
-                    </a>
+                    <p class="fecha">2025 – 2027</p>
+                    <h3>Técnico Superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
+                    <p class="lugar">Universidad Alfonso X el Sabio, Villanueva de la Cañada</p>
                 </li>
                 <li>
-                    <a href="https://facebook.com" target="_blank">
-                        <img src="assets/img/facebook.png" alt="Facebook"> Facebook
-                    </a>
+                    <p class="fecha">2023 – 2025</p>
+                    <h3>Bachillerato</h3>
+                    <p class="lugar">Colegio El Catón</p>
                 </li>
-            </ul>
-        </aside>
+            </ol>
+        </section>
 
-        <div class="perfil">
-            <img src="assets/img/perfil_cv.png" alt="Foto de perfil">
-        </div>
+        <section class="bloque" aria-labelledby="t-habilidades">
+            <h2 id="t-habilidades">Habilidades</h2>
+            <dl class="cuerpo habilidades">
+                <div class="par-naranja">
+                    <dt>Sistemas</dt>
+                    <dd>Windows Server, Windows 11, Ubuntu, Kali Linux, VirtualBox, Docker, PowerShell</dd>
+                </div>
+                <div class="par-verde">
+                    <dt>Redes y seguridad</dt>
+                    <dd>Direccionamiento IP, DHCP, DNS, Fortinet, permisos y endurecimiento, pruebas de seguridad</dd>
+                </div>
+                <div class="par-azul">
+                    <dt>Desarrollo</dt>
+                    <dd>HTML, CSS, JavaScript, TypeScript, PHP, Java, Next.js, Astro, Hugo</dd>
+                </div>
+                <div class="par-marron">
+                    <dt>Bases de datos y herramientas</dt>
+                    <dd>SQL, Oracle, MySQL, SQLite, Prisma, Git, GitHub, GitHub Actions</dd>
+                </div>
+            </dl>
+        </section>
 
-        <div class="biografia">
-            <h1>Alejandro Calvo Mateos</h1>
-            <p>Desarrollador Full Stack con experiencia en la creación de aplicaciones web y móviles. Apasionado por la tecnología y el aprendizaje continuo.</p>
-        </div>
+        <section class="bloque" aria-labelledby="t-certificaciones">
+            <h2 id="t-certificaciones">Certificaciones, idiomas y más</h2>
+            <dl class="cuerpo datos">
+                <div>
+                    <dt>Fortinet Certified Fundamentals (FCF)</dt>
+                    <dd>Ciberseguridad</dd>
+                </div>
+                <div>
+                    <dt>Español</dt>
+                    <dd>Nativo</dd>
+                </div>
+                <div>
+                    <dt>Inglés</dt>
+                    <dd>Intermedio, preparando el B2</dd>
+                </div>
+                <div>
+                    <dt>Hackathon</dt>
+                    <dd>Participante, en equipo</dd>
+                </div>
+            </dl>
+        </section>
 
-        <div class="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li><strong>Lenguajes:</strong> JavaScript, PHP, Java, CSS, HTML, SQL</li>
-                <li><strong>Bases de Datos:</strong> Oracle, MySQL</li>
-                <li><strong>Versiones:</strong> Git, GitHub</li>
-            </ul>
-        </div>
+    </main>
 
-        <div class="experiencia">
-            <h2>Experiencia Profesional</h2>
-            <ul>
-                <li><strong>Desarrollador Web - XYZ</strong> (2020 - Presente): React, Node.js.</li>
-                <li><strong>Desarrollador Móvil - ABC</strong> (2018 - 2020): Flutter, iOS/Android.</li>
-            </ul>
-        </div>
-
-        <div class="estudios">
-            <h2>Formación Académica</h2>
-            <ul>
-                <li><strong>ASIR</strong> - UAX (2025 - 2027)</li>
-                <li><strong>Bachillerato</strong> - El Catón (2023 - 2025)</li>
-                <li><strong>ESO</strong> - El Catón (2019 - 2023)</li>
-            </ul>
-        </div>
-
-        <footer class="footer">
-            <p>&copy; 2024 Alejandro Calvo Mateos. Todos los derechos reservados.</p>
-        </footer>
-
-    </div>
+    <footer class="pie">
+        <p>Alejandro Calvo Mateos. Actualizado en noviembre de 2026.</p>
+    </footer>
 </body>
 </html>
