@@ -23,7 +23,6 @@ assets/img/favicon.svg
 ## Cómo cambiarlo
 
 - **Foto:** guarda la foto como `assets/img/foto.jpg` y sustituye el `div` con las iniciales (hay un comentario en `index.html` que lo explica).
-- **Instagram:** cambia `TU_USUARIO` en el enlace de Instagram de `index.html`.
 - **Contenido:** cada sección está en un `<section class="bloque">` de `index.html`.
 
 Para verlo en local basta con abrir `index.html` en el navegador, o servir la carpeta:
