@@ -16,7 +16,7 @@ Mi currículum como página web: estudiante de 2º de ASIR en la UAX, con especi
 
 ```
 index.html               el CV
-assets/css/index_style.css
+assets/css/cv.css
 assets/img/favicon.svg
 ```
 
