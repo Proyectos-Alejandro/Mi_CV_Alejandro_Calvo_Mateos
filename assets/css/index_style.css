@@ -532,8 +532,19 @@ h3 {
     .bloque {
         grid-template-columns: var(--gutter) minmax(0, 1fr);
         gap: 0.5rem 1.5rem;
-        padding-block: 0.8rem;
+        padding-block: 0.7rem;
+    }
+
+    /* Las secciones se pueden partir entre páginas; cada elemento, no */
+    .linea-tiempo li,
+    .proyecto,
+    .habilidades > div,
+    .datos div {
         break-inside: avoid;
+    }
+
+    .bloque > h2 {
+        break-after: avoid;
     }
 
     .bloque > h2 {
